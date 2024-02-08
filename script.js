@@ -22,19 +22,25 @@ let moveForward = () =>{
         num = 0;
     }
     myMover.append(arr[num]);
+    console.log(arr[num]);
 }
-forwardButton.addEventListener('click',()=>{
+let moveBackward = () =>{
     num--;
-    if(num<0){
-        num=arr.length-1;
+    if (num < 0) {
+        num = arr.length - 1;
     }
-    a++;
-    if(a>=colors.length){
-        a=0;
-    }
+    // a++;
+    // if(a>=colors.length){
+    //     a=0;
+    // }
     console.log(arr[num]);
     myMover.append(arr[num]);
-    // myContainer.style.background=colors[a];
-})
-backwardButton.addEventListener('click',moveForward)
+    // myContainer.style.backgro
+}
+forwardButton.addEventListener('click',moveForward)
+backwardButton.addEventListener('click',moveBackward)
 setInterval(moveForward,5000);
+
+// myMover.addEventListener('')
+
+//more qwork still needed to bje done here

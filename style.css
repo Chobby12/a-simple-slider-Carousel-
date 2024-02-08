@@ -55,6 +55,12 @@ body{
 .container .one, .container .two, .container .three, .container .four, .container .five, .container .six, .container .seven{
     height: 320px;
     width: 300px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 .one{
     background: indianred;
