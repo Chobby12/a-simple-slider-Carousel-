@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.container{
+    position: relative;
+    width: 80%;
+    padding: 0 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 0;
+}
+/* .container::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 400px;
+    background: rgba(255, 255, 255, .9);
+    filter: blur(15px) saturate(300%) sepia(100%);
+    /* border-radius: 50%; 
+    left: -150px;
+    z-index: 1;
+}
+.container::after{
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 400px;
+    background: rgba(255, 255, 255, .9);
+    filter: blur(15px) saturate(300%);
+    right: -150px;
+} */
+.uno{
+    position: absolute;
+    min-width: fit-content;
+    height: 300px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container .one, .container .two, .container .three, .container .four, .container .five, .container .six, .container .seven{
+    height: 320px;
+    width: 300px;
+}
+.one{
+    background: indianred;
+}
+.two{
+    right: 10px;
+    background: orange;
+}
+.three{
+    background: yellow;
+}
+.four{
+    background: green;
+}
+.five{
+    background: crimson;
+}
+.six{
+    background: chocolate;
+}
+.seven{
+    background: purple;
+}
+.btn{
+    position: fixed;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    border-radius: 300px;
+}
+button{
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #121212;
+    color: #f8f8f8;
+    font-weight: 900;
+    border-radius: 50%;
+}
+.forward{
+    transform: translateX(-20px);
+}
+.backward{
+    transform: translateX(20px);
+}
